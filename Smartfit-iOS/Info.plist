@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>&lt;key&gt;NSLocationWhenInUseUsageDescription&lt;/key&gt;</key>
+	<string></string>
+	<key>&lt;string&gt;SmartCare uses your location to track workouts and send emergency alerts.&lt;/string&gt;</key>
+	<string></string>
+	<key>&lt;key&gt;NSHealthShareUsageDescription&lt;/key&gt;</key>
+	<string></string>
+	<key>&lt;string&gt;SmartCare uses HealthKit to access your heart rate and activity data.&lt;/string&gt;
+&lt;string&gt;SmartCare uses HealthKit to access your heart rate and activity data.&lt;/string&gt;
+</key>
+	<string></string>
+	<key>&lt;key&gt;NSHealthUpdateUsageDescription&lt;/key&gt;
+&lt;key&gt;NSHealthUpdateUsageDescription&lt;/key&gt;
+</key>
+	<string></string>
+	<key>&lt;string&gt;SmartCare updates your fitness and health records.&lt;/string&gt;</key>
+	<string></string>
+	<key>MKDirectionsApplicationSupportedModes</key>
+	<array/>
+</dict>
+</plist>
