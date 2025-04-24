@@ -51,7 +51,7 @@ struct SignInView: View {
 
                 // Sign In Button
                             
-                            NavigationLink(destination: SignUpView()) {
+                            NavigationLink(destination: WelcomeView()) {
                                 Text("Sign In")
                                     .font(.headline)
                                     .foregroundColor(.white)
