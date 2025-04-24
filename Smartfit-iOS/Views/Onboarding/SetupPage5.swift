@@ -48,7 +48,7 @@ struct SetupPage5: View {
                     .frame(maxHeight: 500)
                     .padding(.horizontal)
 
-                NavigationLink(destination: LoginChoiceView()) {
+                NavigationLink(destination: SystemSetupGenderView()) {
                     Image(systemName: "chevron.right")
                         .font(.system(size: 20, weight: .bold))
                         .foregroundColor(.white)
