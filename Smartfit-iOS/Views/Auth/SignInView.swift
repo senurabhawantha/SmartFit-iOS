@@ -43,7 +43,7 @@ struct SignInView: View {
                         // Add logic
                     }
                     .font(.caption)
-                    .foregroundColor(.pink)
+                    .foregroundColor(.white)
                     .padding(.trailing, 40)
                 }
 
@@ -56,7 +56,7 @@ struct SignInView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.pink)
+                        .background(Color.black)
                         .cornerRadius(25)
                 }
                 .padding(.horizontal, 40)
@@ -64,7 +64,7 @@ struct SignInView: View {
                 // OR Divider
                 Text("OR")
                     .font(.caption)
-                    .foregroundColor(.gray)
+                    .foregroundColor(.white)
 
                 // Social Media Icons
                 HStack(spacing: 20) {
@@ -83,7 +83,7 @@ struct SignInView: View {
                 HStack {
                     Text("Don't have an account?")
                     NavigationLink("Sign Up", destination: SignUpView())
-                        .foregroundColor(.pink)
+                        .foregroundColor(.white)
                 }
                 .font(.footnote)
 

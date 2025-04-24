@@ -21,6 +21,7 @@ struct SignUpView: View {
                         
                         VStack(spacing: 30) {
                             Spacer()
+                            Spacer()
 
                 // Logo
                 Image("heart")
@@ -40,6 +41,9 @@ struct SignUpView: View {
                 CustomSecureField(icon: "lock", placeholder: "Password", text: $password)
                 CustomSecureField(icon: "lock", placeholder: "Password Confirmation", text: $confirmPassword)
 
+                            Spacer()
+                            
+                    
                 // Sign Up Button
                 Button(action: {
                     print("Sign Up pressed")
@@ -49,7 +53,7 @@ struct SignUpView: View {
                         .foregroundColor(.white)
                         .frame(maxWidth: .infinity)
                         .padding()
-                        .background(Color.pink)
+                        .background(Color.black)
                         .cornerRadius(25)
                 }
                 .padding(.horizontal, 40)
@@ -58,11 +62,13 @@ struct SignUpView: View {
                 HStack {
                     Text("Already have an account?")
                     NavigationLink("Sign In", destination: SignInView())
-                        .foregroundColor(.pink)
+                        .foregroundColor(.white)
                 }
                 .font(.footnote)
 
                 Spacer()
+                            Spacer()
+                            Spacer()
             }
             .padding()
         }
