@@ -3,17 +3,17 @@ import SwiftUI
 struct LoginChoiceView: View {
     var body: some View {
         ZStack {
-            LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.9), Color.red]),
-                           startPoint: .topLeading,
-                           endPoint: .bottomTrailing)
-                .ignoresSafeArea()
-            
-            VStack(spacing: 30) {
-                Spacer()
+            LinearGradient(gradient: Gradient(colors: [Color.pink.opacity(0.8), Color.red.opacity(0.7)]),
+                                       startPoint: .topLeading,
+                                       endPoint: .bottomTrailing)
+                            .ignoresSafeArea()
+                        
+                        VStack(spacing: 30) {
+                            Spacer()
                 
-                Image("AppLogo")
+                Image("heart")
                     .resizable()
-                    .frame(width: 100, height: 100)
+                    .frame(width: 250, height: 275)
                     .clipShape(Circle())
                     .shadow(radius: 10)
 
@@ -50,4 +50,7 @@ struct LoginChoiceView: View {
             }
         }
     }
+}
+#Preview {
+    LoginChoiceView()
 }
