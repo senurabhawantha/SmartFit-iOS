@@ -36,30 +36,47 @@ struct SignInView: View {
                 CustomInputField(icon: "envelope", placeholder: "Email Address", text: $email)
                 CustomSecureField(icon: "lock", placeholder: "Password", text: $password)
 
-                // Forgot Password
-                HStack {
-                    Spacer()
-                    Button("Forgot Password?") {
-                        // Add logic
-                    }
-                    .font(.caption)
-                    .foregroundColor(.white)
-                    .padding(.trailing, 40)
-                }
+                            // Forgot Password
+                            HStack {
+                                Spacer()
+                                NavigationLink(destination: ForgotPasswordView()) {
+                                    Text("Forgot Password?")
+                                        .font(.caption)
+                                        .foregroundColor(.white)
+                                }
+                                .padding(.trailing, 40)
+                            }
+
+                
 
                 // Sign In Button
-                Button(action: {
-                    print("Sign In pressed")
-                }) {
-                    Text("Sign In")
-                        .font(.headline)
-                        .foregroundColor(.white)
-                        .frame(maxWidth: .infinity)
-                        .padding()
-                        .background(Color.black)
-                        .cornerRadius(25)
-                }
-                .padding(.horizontal, 40)
+                            
+                            NavigationLink(destination: SignUpView()) {
+                                Text("Sign In")
+                                    .font(.headline)
+                                    .foregroundColor(.white)
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(Color.black)
+                                    .cornerRadius(25)
+                            }
+                            .padding(.horizontal, 40)
+
+                            
+                            
+//                Button(action: {
+//                    print("Sign In pressed")
+//                }) {
+//                    NavigationLink(destination: SignUpView())
+//                    Text("Sign In")
+//                        .font(.headline)
+//                        .foregroundColor(.white)
+//                        .frame(maxWidth: .infinity)
+//                        .padding()
+//                        .background(Color.black)
+//                        .cornerRadius(25)
+//                }
+//                .padding(.horizontal, 40)
 
                 // OR Divider
                 Text("OR")

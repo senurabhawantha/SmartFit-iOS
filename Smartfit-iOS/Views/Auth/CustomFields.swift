@@ -43,4 +43,3 @@ struct CustomSecureField: View {
         .padding(.horizontal, 40)
     }
 }
-
